@@ -1,0 +1,83 @@
+
+使用AI 自动化搭建虚拟化测试环境。
+
+通过组网环境描述，自动生成测试环境。
+
+
+## GNS3
+
+[GNS3使用](GNS3使用.md)
+
+## containerlab + vrnetlab
+
+[containerlab-vrnetlab](containerlab-vrnetlab使用.md)
+
+## libvirt + virt-manager
+
+
+## Open vSwitch
+
+
+## VDE
+
+
+
+
+## 附录
+
+### AI
+
+```
+  - GNS3
+    这是最像“搭实验拓扑平台”的方案。官方文档明确写了它是开源软件，gns3-server 也明确支持管理 Qemu/KVM，并负责把节点互连起来。
+    文档：https://docs.gns3.com/docs/
+    仓库：https://github.com/GNS3/gns3-server
+  - libvirt + virt-manager
+    这是更偏“正规管理 QEMU/KVM 虚拟机”的方案。libvirt 官方提供虚拟网络、bridge、NAT、network XML 等能力，virt-manager 是它的图形化前端。
+    libvirt：https://libvirt.org/
+    libvirt 网络文档：https://wiki.libvirt.org/Networking.html
+    virt-manager：https://virt-manager.org/
+  - Open vSwitch
+    这是虚拟交换机，不是完整实验平台，但很适合给 QEMU 虚拟机构网，尤其适合你前面说的“运行中改连接关系”这类需求。官方文档明确说它是开源的，并且很适合 VM 环境。
+    官网：https://www.openvswitch.org/
+    文档：https://docs.openvswitch.org/en/stable/intro/what-is-ovs/
+  - VDE
+    这是比较轻量的虚拟以太网/虚拟交换方案。官方 man page 里明确提到它可用于 qemu，而且还有分布式虚拟网络实现。
+    文档：https://wiki.virtualsquare.org/man/man1/libvdeplug_vxvde.1.html
+  - containerlab + vrnetlab
+    如果你想用声明式拓扑文件来搭网络实验环境，这套也很常见。containerlab 官方文档明确写了它能通过 vrnetlab 跑 VM-based 路由器，而 vrnetlab 内部就是用 qemu 启 VM。
+    containerlab 文档：https://containerlab.dev/manual/vrnetlab/
+    vrnetlab 仓库：https://github.com/vrnetlab/vrnetlab
+
+
+› GNS3 和 containerlab-vrnetlab 区别就是，GNS3 图形化界面做的比较好，另一个比较适合使用配置
+  文件定制，可以这么理解么？
+
+
+• 可以这么理解，但这个概括还不够完整。
+
+  更准确一点说：
+
+  - GNS3 更偏“交互式网络实验平台”
+    重点是可视化拓扑、手工拖拽连线、开 console、抓包、临时改实验，适合人直接操作。
+  - containerlab + vrnetlab 更偏“声明式实验编排”
+    重点是用 YAML 定义拓扑、版本管理、批量部署、自动化复现，适合脚本化和 CI。
+
+  核心区别不只是“一个有 GUI，一个用配置文件”，还包括工作方式不同：
+
+  - GNS3 是 “先打开界面，边看边搭边调”
+  - containerlab 是 “先写拓扑文件，再一键部署”
+  - vrnetlab 只是给 containerlab 提供 VM 类网络设备的运行封装，本身不是完整实验平台
+  - GNS3 对“临时改线、手工排障、教学演示”更友好
+  - containerlab-vrnetlab 对“可重复、可提交到 git、可自动化”更友好
+
+  你可以这样选：
+
+  - 如果你想像画图一样搭实验，优先 GNS3
+  - 如果你想把实验环境当代码管理，优先 containerlab + vrnetlab
+
+  一句话总结：
+  GNS3 更像“图形化实验台”，containerlab-vrnetlab 更像“网络实验的 IaC 编排工具”。
+
+```
+
