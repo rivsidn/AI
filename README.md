@@ -1,14 +1,18 @@
-cladue code 提示词整理.
-
-内容来源自网络，侵删.
-
-
-CLAUDE.md 文件中可以通过 @ 符号引用prompt 文件.
-
-`/memory` 命令可以查看加载了哪些memory 文件.
 
 
 ## TODO
 
-- 弄一个user prompt，让claude code 忍受我的脾气
+### 自动化测试
+
+#### 设备访问方式
+
+- 支持本地虚拟机
+- 支持串口登陆
+- 支持telnet
+- 支持ssh
+
+
+
+
+
 
