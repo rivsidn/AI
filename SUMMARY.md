@@ -20,6 +20,10 @@
   - [srl-vrnetlab使用(一)](virtual-lab/srl-vrnetlab/srl-vrnetlab使用-1.md)
   - [srl-vrnetlab使用(二)](virtual-lab/srl-vrnetlab/srl-vrnetlab使用-2.md)
 
+### containerlab
+
+- [containerlab](virtual-lab/containerlab/README.md)
+  - [containerlab-vrnetlab使用](virtual-lab/containerlab/containerlab-vrnetlab使用.md)
 
 ## 自动化测试
 
