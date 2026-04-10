@@ -13,11 +13,18 @@ nvm alias default 22
 
 ```
 
-
 ## 安装
 
 ```bash
+# 安装
 proxychains npm install -g openclaw@latest
+
+# 查看
+npm list
+
+# 卸载
+npm uninstall -g openclaw
+
 ```
 
 ### 配置
@@ -25,7 +32,6 @@ proxychains npm install -g openclaw@latest
 文件 `/home/yuchao/.openclaw/openclaw.json`.
 
 ```
-
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
@@ -189,6 +195,8 @@ proxychains npm install -g openclaw@latest
 ## 启动
 
 ```bash
-openclaw gateway
+# 调试时候用--verbose模式
+http_proxy=http://127.0.0.1:1081 openclaw gateway --verbose
 ```
+
 
