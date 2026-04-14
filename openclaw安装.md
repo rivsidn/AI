@@ -196,7 +196,23 @@ npm uninstall -g openclaw
 
 ```bash
 # 调试时候用--verbose模式
-http_proxy=http://127.0.0.1:1081 openclaw gateway --verbose
+openclaw gateway --verbose
+```
+
+## 附录
+
+### 问题解决
+
+添加代理，解决模型不通问题.
+
+```bash
+"channels":{
+  "telegram": {
+    "enabled": true,
+    "botToken": "...",
+    "proxy": "http://127.0.0.1:1081"
+  }
+}
 ```
 
 

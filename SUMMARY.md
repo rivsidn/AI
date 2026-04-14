@@ -1,4 +1,38 @@
 
+## 软件开发范式
+
+- [软件开发](soft-development/README.md)
+
+
+### spec
+
+- [spec-kit](soft-development/spec-kit/README.md)
+  - [specify命令](soft-development/spec-kit/specify命令.md)
+  - [spec-kit简单示例](soft-development/spec-kit/spec-kit简单示例.md)
+  - [spec-kit命令](soft-development/spec-kit/spec-kit命令.md)
+  - [spec-kit拓展](soft-development/spec-kit/spec-kit拓展.md)
+
+- [openSpec使用](soft-development/openSpec使用.md)
+
+
+### projects
+
+- [topo-kit开发](soft-development/projects/topo-kit开发.md)
+
+
+## skills
+
+- [skills](skills/README.md)
+  - [superpowers使用](skills/superpowers使用.md)
+
+## MCP
+
+- [mcp](mcp/README.md)
+
+### MCP学习
+
+- [mcp基础知识](mcp/mcp基础知识.md)
+
 ## 虚拟实验室
 
 - [虚拟实验室](virtual-lab/README.md)
@@ -30,19 +64,8 @@
 - [自动化测试框架](自动化测试框架.md)
 
 
-## MCP
-
-- [mcp](mcp/README.md)
-
-### MCP学习
-
-- [mcp基础知识](mcp/mcp基础知识.md)
-
-
-
 ## 其他
 
 - [openclaw](openclaw安装.md)
-
 
 
