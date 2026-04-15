@@ -12,8 +12,11 @@
   - [spec-kit命令](soft-development/spec-kit/spec-kit命令.md)
   - [spec-kit拓展](soft-development/spec-kit/spec-kit拓展.md)
 
-- [openSpec使用](soft-development/openSpec使用.md)
+- [openSpec](soft-development/openSpec/README.md)
+  - [openSpec简单示例](soft-development/openSpec/openSpec简单示例.md)
 
+- [harness](soft-development/harness/README.md)
+  - [harness使用](soft-development/harness/harness使用.md)
 
 ### projects
 
