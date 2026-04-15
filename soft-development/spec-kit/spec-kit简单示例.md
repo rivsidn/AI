@@ -4,6 +4,9 @@
 ### 安装
 
 ```bash
+# 安装uv命令
+http_proxy=http://127.0.0.1:1081 curl -LsSf https://astral.sh/uv/install.sh | bash 
+
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 ```
 
@@ -32,9 +35,11 @@ $ cd sendto-kindle
 否正式可用.
 
 
+
 ### 建立约束
 
 ```codex
+› $speckit-git-commit
 › $speckit-constitution 当前是一个空项目目录，请帮我生成代码约束，侧重用户使用便捷性
 › $speckit-git-commit
 ```
@@ -49,12 +54,27 @@ $ cd sendto-kindle
 
 聚焦 **干什么、为什么干？** 不涉及技术栈.
 
+此处会创建一个分支.
+
+通过下边命令指定需要确定的地方。
+
+```markdown
+# 需要澄清
+[NEEDS CLARIFICATION: ]
+
+# 需要修复
+[FIXME: ]
+
+```
+
 ### 实现计划
 
 ```codex
 › $speckit-plan
 › $speckit-git-commit
 ```
+
+阅读文件，分析不满意的地方，并提出修改方案。
 
 ### 任务列表
 
