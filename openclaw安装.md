@@ -31,42 +31,29 @@ npm uninstall -g openclaw
 
 文件 `/home/yuchao/.openclaw/openclaw.json`.
 
-```
+```json
 {
-  "meta": {
-    "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-11T08:20:36.837Z"
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
   },
-  "wizard": {
-    "lastRunAt": "2026-03-11T06:53:09.895Z",
-    "lastRunVersion": "2026.3.8",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "<Token>",
+      "proxy": "http://127.0.0.1:1081"
+    }
   },
   "models": {
     "providers": {
       "crs": {
-        "baseUrl": "http://45.147.48.41:3030/openai",
-        "apiKey": "<省略>",
+        "baseUrl": "http://127.0.0.1:3000/openai",
+        "apiKey": "<Key>",
         "api": "openai-responses",
         "models": [
-          {
-            "id": "gpt-5.3-codex",
-            "name": "gpt-5.3-codex",
-            "api": "openai-responses",
-            "reasoning": true,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 200000,
-            "maxTokens": 32768
-          },
           {
             "id": "gpt-5.4",
             "name": "gpt-5.4",
@@ -88,77 +75,16 @@ npm uninstall -g openclaw
       }
     }
   },
-  "agents": {
-    "defaults": {
-      "model": {
-        "primary": "crs/gpt-5.3-codex",
-        "fallbacks": [
-          "crs/gpt-5.4"
-        ]
-      },
-      "models": {
-        "crs/gpt-5.3-codex": {
-          "params": {
-            "transport": "sse"
-          },
-          "streaming": true
-        },
-        "crs/gpt-5.4": {
-          "params": {
-            "transport": "sse"
-          },
-          "streaming": true
-        }
-      },
-      "compaction": {
-        "mode": "safeguard"
-      },
-      "thinkingDefault": "minimal",
-      "timeoutSeconds": 120,
-      "maxConcurrent": 4,
-      "subagents": {
-        "maxConcurrent": 8
-      }
-    }
-  },
-  "tools": {},
-  "commands": {
-    "native": "auto",
-    "nativeSkills": "auto",
-    "restart": true,
-    "ownerDisplay": "raw"
-  },
-  "channels": {
-    "telegram": {
-      "enabled": true,
-      "dmPolicy": "pairing",
-      "botToken": "<省略>",
-      "groupPolicy": "open",
-      "streaming": "partial",
-      "timeoutSeconds": 120,
-      "accounts": {
-        "default": {
-          "dmPolicy": "pairing",
-          "groupPolicy": "open",
-          "streaming": "partial",
-          "timeoutSeconds": 120
-        }
-      }
-    }
-  },
   "gateway": {
     "mode": "local",
     "auth": {
       "mode": "token",
-      "token": "<省略>"
+      "token": "<Token>"
     }
   },
-  "plugins": {
-    "entries": {
-      "telegram": {
-        "enabled": true
-      }
-    }
+  "meta": {
+    "lastTouchedVersion": "2026.4.11",
+    "lastTouchedAt": "2026-04-13T11:03:20.392Z"
   }
 }
 ```
