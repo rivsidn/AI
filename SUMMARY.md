@@ -23,14 +23,24 @@
 - [topo-kit开发](soft-development/projects/topo-kit开发.md)
 
 
-## skills
+## skill
 
-- [skills](skills/README.md)
-  - [superpowers使用](skills/superpowers使用.md)
+- [skill](skill/README.md)
+
+### skill基础
+
+- [skill基础](skill/skill基础.md)
+
+### skill使用
+
+- [superpowers使用](skill/superpowers使用.md)
+- [cli-anything使用](skill/cli-anything使用.md)
+- [wiki-manager使用](skill/wiki-manager使用.md)
 
 ## MCP
 
 - [mcp](mcp/README.md)
+  - [universal-db-mcp使用](skills/universal-db-mcp使用.md)
 
 ### MCP学习
 
