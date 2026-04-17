@@ -37,6 +37,13 @@
 - [cli-anything使用](skill/cli-anything使用.md)
 - [wiki-manager使用](skill/wiki-manager使用.md)
 
+### skill创建
+
+
+### skill实例分析
+
+- [skill-creator分析](skill/skill-creator分析.md)
+
 ## MCP
 
 - [mcp](mcp/README.md)
