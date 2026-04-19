@@ -105,7 +105,7 @@ npm uninstall -g openclaw
 
   4. 启动网关（你已经修好 gateway.mode=local）：
 
-  proxychains  openclaw gateway --verbose
+  openclaw gateway --verbose
 
   5. 在 Telegram 里先给你的 Bot 发一条消息，然后查看是否有配对请求：
 
