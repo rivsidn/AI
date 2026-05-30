@@ -1,12 +1,27 @@
 
 
+## TODO
+
+- 如何从更高层次，复盘我们执行的任务
+
 
 
 ## 附录
 
 ### 学习资料
 
+#### 官方文档
+
+- [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
+- [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+
+#### 仓库
+
+- [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/zh/)
 - [deusyu/harness-engineering](https://github.com/deusyu/harness-engineering)
+- [awesome-harness-engineering](https://github.com/walkinglabs/awesome-harness-engineering)
+
 
 #### AI
 
