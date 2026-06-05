@@ -3,7 +3,6 @@
 
 - [软件开发](soft-development/README.md)
 
-
 ### spec
 
 - [spec-kit](soft-development/spec-kit/README.md)
@@ -22,6 +21,11 @@
 ### projects
 
 - [topo-kit开发](soft-development/projects/topo-kit/topo-kit开发.md)
+
+
+### 格式化
+
+- [格式化](soft-development/fmt/格式化文档.md)
 
 
 ## skill

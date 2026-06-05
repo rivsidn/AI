@@ -71,8 +71,11 @@ topology:
 #### 部署拓扑
 
 ```bash
-sudo containerlab deploy -t demo.yml
+sudo containerlab deploy -t demo.yml [--name test]
 ```
+
+同一套拓扑，支持通过 `--name` 设置不同的参数，启动不同的拓扑.
+
 
 #### 查看节点
 
