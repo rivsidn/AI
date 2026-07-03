@@ -1,0 +1,6 @@
+interface:
+  display_name: "Freeplane"
+  short_description: "Create, edit, and validate Freeplane .mm maps"
+  default_prompt: "Use $freeplane to create or edit a Freeplane .mm mind map."
+policy:
+  allow_implicit_invocation: true

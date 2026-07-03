@@ -53,6 +53,7 @@
 
 - [skill-creator分析](skill/skill-creator分析.md)
 
+
 ## MCP
 
 - [mcp](mcp/README.md)
@@ -88,9 +89,19 @@
 - [containerlab](virtual-lab/containerlab/README.md)
   - [containerlab-vrnetlab使用](virtual-lab/containerlab/containerlab-vrnetlab使用.md)
 
+
 ## 自动化测试
 
 - [自动化测试框架](自动化测试框架.md)
+
+
+## AI生成组网图
+
+- [AI生成组网图](AI生成组网图.md)
+
+### freeplane skill
+
+- [freeplane_skill](skill/freeplane_skill/README.md)
 
 
 ## 其他
