@@ -36,13 +36,16 @@
 
 - [skill](skill/README.md)
 
+### skill开源框架
+
+- [superpowers使用](skill/open-source/superpowers使用.md)
+
 ### skill基础
 
 - [skill基础](skill/skill基础.md)
 
 ### skill使用
 
-- [superpowers使用](skill/superpowers使用.md)
 - [cli-anything使用](skill/cli-anything使用.md)
 - [wiki-manager使用](skill/wiki-manager使用.md)
 
