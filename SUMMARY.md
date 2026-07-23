@@ -14,6 +14,9 @@
 - [openSpec](soft-development/openSpec/README.md)
   - [openSpec简单示例](soft-development/openSpec/openSpec简单示例.md)
 
+- [BMAD](soft-development/BMAD/README.md)
+  - [BMAD使用](soft-development/BMAD/BMAD使用.md)
+
 - [harness](soft-development/harness/README.md)
   - [harness学习](soft-development/harness/harness学习.md)
   - [harness使用](soft-development/harness/harness使用.md)
