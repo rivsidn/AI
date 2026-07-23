@@ -35,6 +35,20 @@
 - [软件开发过程](soft-development/process/软件开发过程.md)
 
 
+## Agent
+
+- [agent](agent/README.md)
+
+### codex
+
+- [codex](agent/codex/README.md)
+
+#### plugin
+
+- [codex](agent/codex/plugins/README.md)
+  - [codex](agent/codex/plugins/computer-use.md)
+
+
 ## skill
 
 - [skill](skill/README.md)
