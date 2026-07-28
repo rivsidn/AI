@@ -112,10 +112,10 @@
 
 ## 自动化测试
 
-- [自动化测试框架](自动化测试框架.md)
-
-
-- [playwright使用](playwright使用.md)
+- [自动化测试](Automated-Testing/README.md)
+  - [自动化测试框架](Automated-Testing/自动化测试框架.md)
+  - [pytest使用](Automated-Testing/pytest使用.md)
+  - [playwright使用](Automated-Testing/playwright使用.md)
 
 
 ## AI生成组网图
@@ -125,6 +125,14 @@
 ### freeplane skill
 
 - [freeplane_skill](skill/freeplane_skill/README.md)
+
+
+## chrome extensions
+
+
+- [chrome-extensions框架](chrome-extensions/README.md)
+- [chrome-extensions框架](chrome-extensions/chrome-extensions框架.md)
+
 
 
 ## 其他
