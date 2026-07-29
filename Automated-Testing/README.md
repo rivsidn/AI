@@ -1,7 +1,14 @@
 
-- Nornir
-- Netmiko
-- scrapli	底层连接和执行命令
-- Ansible	自动化编排
-- Nornir	Python 批量任务框架
-- NetBox	网络资产管理
+## NetBox
+
+用于网络资产管理.
+
+NetBox 提供一个 Web 页面（Web UI），用于:
+
+- 查看网络设备
+- 添加设备
+- 修改设备信息
+- 查看 IP 地址分配
+- 查看 VLAN / VRF
+- 查看机柜布局
+- 查看设备连接关系
