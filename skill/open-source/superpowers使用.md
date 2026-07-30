@@ -109,9 +109,32 @@ drwxrwxr-x  4 yuchao yuchao 4096 Jul 14 09:45 writing-skills
 
 ## 基本工作流
 
-- 
+- brainstorming
 
+  头脑风暴，通过提问的方式，完善想法，生成设计文档.
 
+- using-git-worktrees
 
+  创建worktree.
+
+- writing-plans
+
+  编写实现计划.
+
+- executing-plans
+
+  执行计划.
+
+- test-driven-development
+
+  测试驱动开发.
+
+- requesting-code-review
+
+  代码review.
+
+- finishing-a-development-branch
+
+  完成开发分支.
 
 
