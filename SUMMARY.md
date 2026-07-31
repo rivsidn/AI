@@ -113,7 +113,15 @@
 ## 自动化测试
 
 - [自动化测试](Automated-Testing/README.md)
+  - [软件测试](Automated-Testing/软件测试.md)
   - [自动化测试框架](Automated-Testing/自动化测试框架.md)
+
+### 单元测试
+
+  - [CUnit使用](Automated-Testing/CUnit使用.md)
+
+### 系统测试
+
   - [pytest使用](Automated-Testing/pytest使用.md)
   - [Netmiko使用](Automated-Testing/Netmiko使用.md)
   - [Ansible使用](Automated-Testing/Ansible使用.md)
@@ -125,10 +133,7 @@
 
   - [playwright使用](Automated-Testing/playwright使用.md)
 
-### 用例
 
-- [自动化测试用例](Automated-Testing/cases/README.md)
-  - [自动化测试用例](Automated-Testing/cases/README.md)
 
 
 ## AI生成组网图
