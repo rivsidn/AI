@@ -21,6 +21,8 @@
   - [harness学习](soft-development/harness/harness学习.md)
   - [harness使用](soft-development/harness/harness使用.md)
 
+- [grill-me使用](soft-development/grill-me使用.md)
+
 ### projects
 
 - [topo-kit开发](soft-development/projects/topo-kit/topo-kit开发.md)
