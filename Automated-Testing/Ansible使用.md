@@ -65,7 +65,7 @@ ansible-playbook -i inventory.yaml playbook.yaml
 - 但同一个 task 会并发地在多个 hosts 上执行
 
 
-## 应用实例(一)
+## 应用实例-查看设备联通性
 
 配置IP 地址，查看是否能r1 --> r3 是否能ping 通.
 

@@ -68,6 +68,7 @@
 
 ### skill创建
 
+- [skill创建](skill/skill创建.md)
 
 ### skill实例分析
 
@@ -125,6 +126,8 @@
   - [pytest使用](Automated-Testing/pytest使用.md)
   - [Netmiko使用](Automated-Testing/Netmiko使用.md)
   - [Ansible使用](Automated-Testing/Ansible使用.md)
+    - [Ansible-role使用](Automated-Testing/Ansible-role使用.md)
+
   - [Robot-Framework使用](Automated-Testing/Robot-Framework使用.md)
 
   - [scrapli使用](Automated-Testing/scrapli使用.md)
@@ -132,8 +135,6 @@
   - [NAPALM使用](Automated-Testing/NAPALM使用.md)
 
   - [playwright使用](Automated-Testing/playwright使用.md)
-
-
 
 
 ## AI生成组网图
@@ -152,6 +153,12 @@
 - [chrome-extensions框架](chrome-extensions/chrome-extensions框架.md)
 
 
+## 配套工具
+
+- [配套工具](tools/README.md)
+  - [tmux-webui使用](tools/tmux-webui使用.md)
+  - [muxplex使用](tools/muxplex使用.md)
+  - [webmux使用](tools/webmux使用.md)
 
 ## 其他
 
