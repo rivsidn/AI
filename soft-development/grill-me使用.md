@@ -1,53 +1,61 @@
 
 ## 安装
 
-
 ```bash
-$ cd project/
-$ npx skills@latest add mattpocock/skills
+# 项目目录
+cd project/
+# 安装
+npx skills@latest add mattpocock/skills
 
-◆  Select skills to install (space to toggle)
-  ❯ ▾ ○ Mattpocock Skills
-    ├─ ○ ask-matt
-    ├─ ○ code-review
-    ├─ ○ codebase-design
-    ├─ ○ diagnosing-bugs
-    ├─ ○ domain-modeling
-    ├─ ○ grill-me
-    ├─ ○ grill-with-docs
-    ├─ ○ grilling
-    ├─ ○ handoff
-    ├─ ○ implement
-    ├─ ○ improve-codebase-architecture
-    ├─ ○ prototype
-    ├─ ○ research
-    ├─ ○ resolving-merge-conflicts
-    ├─ ○ setup-matt-pocock-skills
-    ├─ ○ tdd
-    ├─ ○ teach
-    ├─ ○ to-questionnaire
-    ├─ ○ to-spec
-    ├─ ○ to-tickets
-    ├─ ○ triage
-    ├─ ○ wait-what
-    ├─ ○ wayfinder
-    ├─ ○ wizard
-    └─ ○ writing-for-agents
-    ▾ ○ Other
-    ├─ ○ claude-handoff
-    ├─ ○ git-guardrails-claude-code
-    ├─ ○ loop-me
-    ├─ ○ migrate-to-shoehorn
-    ├─ ○ scaffold-exercises
-    ├─ ○ setup-pre-commit
-    ├─ ○ setup-ts-deep-modules
-    ├─ ○ writing-beats
-    ├─ ○ writing-fragments
-    └─ ○ writing-shape
+# 配置
+<codex> $setup-matt-pocock-skills
+
+# 更新
+npx skills update
+
 ```
 
 
+
+## 附录
+
+### 名词解释
+
+| 名词 | 解释                                       |
+|------|--------------------------------------------|
+| ADR  | Architecture Decision Record(架构决策记录) |
+
+
 ### 技能介绍
+
+| 技能                          | 对象 | 说明                                |
+|-------------------------------|------|-------------------------------------|
+| setup-matt-pocock-skills      | 用户 | 使用技能之前，每个代码库配置一次    |
+| ask-matt                      | 用户 | 路由技能，不清楚用什么技能的时候问  |
+| grill-with-docs               | 用户 | 构建项目领域语言，修改ADR 等        |
+| triage                        | 用户 | 将外部引入的PR、issues 等分类       |
+| improve-codebase-architecture | 用户 | 代码库架构改进                      |
+| to-spec                       | 用户 | 将对话变成规范                      |
+| to-tickets                    | 用户 | 将计划、规格、讨论拆分成小的tickets |
+| implement                     | 用户 | 实现                                |
+| wayfinder                     | 用户 | 规划一项庞大的任务                  |
+| prototype                     | 模型 | 构建一个简单的原型应用程序          |
+| diagnosing-bugs               | 模型 | 诊断问题                            |
+| research                      | 模型 | 研究                                |
+| tdd                           | 模型 | 面向测试驱动开发                    |
+| domain-modeling               | 模型 | 构建并完善领域模型                  |
+| codebase-design               | 模型 | 代码库设计                          |
+| code-review                   | 模型 | 代码审查                            |
+| resolving-merge-conflicts     | 模型 | 解决合并冲突                        |
+| grill-me                      | 用户 | 不断被询问，直到所有分支得到解决    |
+| handoff                       | 用户 | 将对话内容整理成文档给其他agent     |
+| teach                         | 用户 | 学习新的技能或概念                  |
+| writing-great-skills          | 用户 | 用于实现skill                       |
+| grilling                      | 模型 | 询问skill                           |
+| to-questionnaire              | 用户 | 生成调查问卷                        |
+| wait-what                     | 用户 | 解释一下刚才的说法                  |
+| wizard                        | 模型 | 生成一个可交互的bash 脚本用户执行   |
+
 
 #### ask-matt
 
@@ -390,64 +398,5 @@ grill-with-docs
 它不会直接替你写文件
 
 writing-for-agents 更像持续生效的写作标准和审稿原则。
-
-
-### others
-
-#### claude-handoff
-
-一句话概括：claude-handoff 会把当前上下文直接交给一个新启动的 Claude 后台 Agent，让它在当前目录立即继续工作；它不是通用 Codex 技能，且要注意并发修改同一工作区的风险。
-
-
-#### git-guardrails-claude-code
-
-一句话概括：git-guardrails-claude-code 通过 Claude Code 的 PreToolUse Hook，在常见危险 Git 命令执行前进行拦截；它是防误操作护栏，不是完整安全边界，并且只适用于 Claude Code。
-
-#### loop-me
-
-
-
-
-
-## 附录
-
-• 这个仓库是给 Claude Code、Codex 等编程 Agent 用的技能集合。作者对 Codex 推荐使用 skills.sh 安装器，不需要手动 clone 仓库。
-
-  在你想使用这些技能的项目根目录执行：
-
-  cd /你的项目目录
-  npx skills@latest add mattpocock/skills
-
-  安装器会交互式询问：
-
-  1. 安装哪些技能
-  2. 安装给哪个 Agent——选择 Codex
-  3. 安装到当前项目还是用户级目录
-
-  选择技能时，务必包含：
-
-  setup-matt-pocock-skills
-
-  安装结束后，重新开始一个 Codex 会话或进入下一轮对话，让新技能被发现，然后运行：
-
-  /setup-matt-pocock-skills
-
-  如果 Codex 界面使用 $技能名 的调用形式，则运行：
-
-  $setup-matt-pocock-skills
-
-  它会配置问题跟踪方式、工单标签以及文档保存位置。
-
-  你当前环境已经满足条件：
-
-  - Node.js：v22.22.1
-  - npm/npx：10.9.4
-  - 当前目录：/home/yuchao/tmp/chat_channel
-
-  不过当前目录看起来不像代码项目，所以不建议直接在这里执行，除非你就是想把技能装到这个目录。建议先进入实际项目根目录再安装。
-
-  另外，这套技能中有 tdd、code-review、diagnosing-bugs 等，和你已有的部分 superpowers 技能可能重叠。安装器允许按需勾选，不必全部安装，也不要
-  同时使用 Claude 插件版和 npx skills 版，否则会出现重复技能。
-
 
 
